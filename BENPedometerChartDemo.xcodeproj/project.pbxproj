@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E945A89318F6C46A00FA4F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89218F6C46A00FA4F36 /* Foundation.framework */; };
+		E945A89518F6C46A00FA4F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */; };
+		E945A89718F6C46A00FA4F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89618F6C46A00FA4F36 /* UIKit.framework */; };
+		E945A89D18F6C46A00FA4F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E945A89B18F6C46A00FA4F36 /* InfoPlist.strings */; };
+		E945A89F18F6C46A00FA4F36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E945A89E18F6C46A00FA4F36 /* main.m */; };
+		E945A8A318F6C46A00FA4F36 /* BENAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E945A8A218F6C46A00FA4F36 /* BENAppDelegate.m */; };
+		E945A8A618F6C46A00FA4F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E945A8A418F6C46A00FA4F36 /* Main.storyboard */; };
+		E945A8A918F6C46A00FA4F36 /* BENViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E945A8A818F6C46A00FA4F36 /* BENViewController.m */; };
+		E945A8AB18F6C46A00FA4F36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E945A8AA18F6C46A00FA4F36 /* Images.xcassets */; };
+		E945A8B218F6C46A00FA4F36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A8B118F6C46A00FA4F36 /* XCTest.framework */; };
+		E945A8B318F6C46A00FA4F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89218F6C46A00FA4F36 /* Foundation.framework */; };
+		E945A8B418F6C46A00FA4F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89618F6C46A00FA4F36 /* UIKit.framework */; };
+		E945A8BC18F6C46A00FA4F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E945A8BA18F6C46A00FA4F36 /* InfoPlist.strings */; };
+		E945A8BE18F6C46A00FA4F36 /* BENPedometerChartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E945A8BD18F6C46A00FA4F36 /* BENPedometerChartDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E945A8B518F6C46A00FA4F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E945A88718F6C46A00FA4F36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E945A88E18F6C46A00FA4F36;
+			remoteInfo = BENPedometerChartDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E945A88F18F6C46A00FA4F36 /* BENPedometerChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BENPedometerChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E945A89218F6C46A00FA4F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E945A89618F6C46A00FA4F36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E945A89A18F6C46A00FA4F36 /* BENPedometerChartDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BENPedometerChartDemo-Info.plist"; sourceTree = "<group>"; };
+		E945A89C18F6C46A00FA4F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E945A89E18F6C46A00FA4F36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E945A8A018F6C46A00FA4F36 /* BENPedometerChartDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BENPedometerChartDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E945A8A118F6C46A00FA4F36 /* BENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BENAppDelegate.h; sourceTree = "<group>"; };
+		E945A8A218F6C46A00FA4F36 /* BENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BENAppDelegate.m; sourceTree = "<group>"; };
+		E945A8A518F6C46A00FA4F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E945A8A718F6C46A00FA4F36 /* BENViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BENViewController.h; sourceTree = "<group>"; };
+		E945A8A818F6C46A00FA4F36 /* BENViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BENViewController.m; sourceTree = "<group>"; };
+		E945A8AA18F6C46A00FA4F36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E945A8B018F6C46A00FA4F36 /* BENPedometerChartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BENPedometerChartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E945A8B118F6C46A00FA4F36 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E945A8B918F6C46A00FA4F36 /* BENPedometerChartDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BENPedometerChartDemoTests-Info.plist"; sourceTree = "<group>"; };
+		E945A8BB18F6C46A00FA4F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E945A8BD18F6C46A00FA4F36 /* BENPedometerChartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BENPedometerChartDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E945A88C18F6C46A00FA4F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A89518F6C46A00FA4F36 /* CoreGraphics.framework in Frameworks */,
+				E945A89718F6C46A00FA4F36 /* UIKit.framework in Frameworks */,
+				E945A89318F6C46A00FA4F36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E945A8AD18F6C46A00FA4F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A8B218F6C46A00FA4F36 /* XCTest.framework in Frameworks */,
+				E945A8B418F6C46A00FA4F36 /* UIKit.framework in Frameworks */,
+				E945A8B318F6C46A00FA4F36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E945A88618F6C46A00FA4F36 = {
+			isa = PBXGroup;
+			children = (
+				E945A89818F6C46A00FA4F36 /* BENPedometerChartDemo */,
+				E945A8B718F6C46A00FA4F36 /* BENPedometerChartDemoTests */,
+				E945A89118F6C46A00FA4F36 /* Frameworks */,
+				E945A89018F6C46A00FA4F36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E945A89018F6C46A00FA4F36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E945A88F18F6C46A00FA4F36 /* BENPedometerChartDemo.app */,
+				E945A8B018F6C46A00FA4F36 /* BENPedometerChartDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E945A89118F6C46A00FA4F36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E945A89218F6C46A00FA4F36 /* Foundation.framework */,
+				E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */,
+				E945A89618F6C46A00FA4F36 /* UIKit.framework */,
+				E945A8B118F6C46A00FA4F36 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E945A89818F6C46A00FA4F36 /* BENPedometerChartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E945A8A118F6C46A00FA4F36 /* BENAppDelegate.h */,
+				E945A8A218F6C46A00FA4F36 /* BENAppDelegate.m */,
+				E945A8A418F6C46A00FA4F36 /* Main.storyboard */,
+				E945A8A718F6C46A00FA4F36 /* BENViewController.h */,
+				E945A8A818F6C46A00FA4F36 /* BENViewController.m */,
+				E945A8AA18F6C46A00FA4F36 /* Images.xcassets */,
+				E945A89918F6C46A00FA4F36 /* Supporting Files */,
+			);
+			path = BENPedometerChartDemo;
+			sourceTree = "<group>";
+		};
+		E945A89918F6C46A00FA4F36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E945A89A18F6C46A00FA4F36 /* BENPedometerChartDemo-Info.plist */,
+				E945A89B18F6C46A00FA4F36 /* InfoPlist.strings */,
+				E945A89E18F6C46A00FA4F36 /* main.m */,
+				E945A8A018F6C46A00FA4F36 /* BENPedometerChartDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E945A8B718F6C46A00FA4F36 /* BENPedometerChartDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E945A8BD18F6C46A00FA4F36 /* BENPedometerChartDemoTests.m */,
+				E945A8B818F6C46A00FA4F36 /* Supporting Files */,
+			);
+			path = BENPedometerChartDemoTests;
+			sourceTree = "<group>";
+		};
+		E945A8B818F6C46A00FA4F36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E945A8B918F6C46A00FA4F36 /* BENPedometerChartDemoTests-Info.plist */,
+				E945A8BA18F6C46A00FA4F36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E945A88E18F6C46A00FA4F36 /* BENPedometerChartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E945A8C118F6C46A00FA4F36 /* Build configuration list for PBXNativeTarget "BENPedometerChartDemo" */;
+			buildPhases = (
+				E945A88B18F6C46A00FA4F36 /* Sources */,
+				E945A88C18F6C46A00FA4F36 /* Frameworks */,
+				E945A88D18F6C46A00FA4F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BENPedometerChartDemo;
+			productName = BENPedometerChartDemo;
+			productReference = E945A88F18F6C46A00FA4F36 /* BENPedometerChartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E945A8AF18F6C46A00FA4F36 /* BENPedometerChartDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E945A8C418F6C46A00FA4F36 /* Build configuration list for PBXNativeTarget "BENPedometerChartDemoTests" */;
+			buildPhases = (
+				E945A8AC18F6C46A00FA4F36 /* Sources */,
+				E945A8AD18F6C46A00FA4F36 /* Frameworks */,
+				E945A8AE18F6C46A00FA4F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E945A8B618F6C46A00FA4F36 /* PBXTargetDependency */,
+			);
+			name = BENPedometerChartDemoTests;
+			productName = BENPedometerChartDemoTests;
+			productReference = E945A8B018F6C46A00FA4F36 /* BENPedometerChartDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E945A88718F6C46A00FA4F36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BEN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ben Packard";
+				TargetAttributes = {
+					E945A8AF18F6C46A00FA4F36 = {
+						TestTargetID = E945A88E18F6C46A00FA4F36;
+					};
+				};
+			};
+			buildConfigurationList = E945A88A18F6C46A00FA4F36 /* Build configuration list for PBXProject "BENPedometerChartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E945A88618F6C46A00FA4F36;
+			productRefGroup = E945A89018F6C46A00FA4F36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E945A88E18F6C46A00FA4F36 /* BENPedometerChartDemo */,
+				E945A8AF18F6C46A00FA4F36 /* BENPedometerChartDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E945A88D18F6C46A00FA4F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A8AB18F6C46A00FA4F36 /* Images.xcassets in Resources */,
+				E945A89D18F6C46A00FA4F36 /* InfoPlist.strings in Resources */,
+				E945A8A618F6C46A00FA4F36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E945A8AE18F6C46A00FA4F36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A8BC18F6C46A00FA4F36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E945A88B18F6C46A00FA4F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A8A318F6C46A00FA4F36 /* BENAppDelegate.m in Sources */,
+				E945A89F18F6C46A00FA4F36 /* main.m in Sources */,
+				E945A8A918F6C46A00FA4F36 /* BENViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E945A8AC18F6C46A00FA4F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E945A8BE18F6C46A00FA4F36 /* BENPedometerChartDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E945A8B618F6C46A00FA4F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E945A88E18F6C46A00FA4F36 /* BENPedometerChartDemo */;
+			targetProxy = E945A8B518F6C46A00FA4F36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E945A89B18F6C46A00FA4F36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E945A89C18F6C46A00FA4F36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E945A8A418F6C46A00FA4F36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E945A8A518F6C46A00FA4F36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E945A8BA18F6C46A00FA4F36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E945A8BB18F6C46A00FA4F36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E945A8BF18F6C46A00FA4F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E945A8C018F6C46A00FA4F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E945A8C218F6C46A00FA4F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BENPedometerChartDemo/BENPedometerChartDemo-Prefix.pch";
+				INFOPLIST_FILE = "BENPedometerChartDemo/BENPedometerChartDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E945A8C318F6C46A00FA4F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BENPedometerChartDemo/BENPedometerChartDemo-Prefix.pch";
+				INFOPLIST_FILE = "BENPedometerChartDemo/BENPedometerChartDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E945A8C518F6C46A00FA4F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BENPedometerChartDemo.app/BENPedometerChartDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BENPedometerChartDemo/BENPedometerChartDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BENPedometerChartDemoTests/BENPedometerChartDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E945A8C618F6C46A00FA4F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BENPedometerChartDemo.app/BENPedometerChartDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BENPedometerChartDemo/BENPedometerChartDemo-Prefix.pch";
+				INFOPLIST_FILE = "BENPedometerChartDemoTests/BENPedometerChartDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E945A88A18F6C46A00FA4F36 /* Build configuration list for PBXProject "BENPedometerChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E945A8BF18F6C46A00FA4F36 /* Debug */,
+				E945A8C018F6C46A00FA4F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E945A8C118F6C46A00FA4F36 /* Build configuration list for PBXNativeTarget "BENPedometerChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E945A8C218F6C46A00FA4F36 /* Debug */,
+				E945A8C318F6C46A00FA4F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E945A8C418F6C46A00FA4F36 /* Build configuration list for PBXNativeTarget "BENPedometerChartDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E945A8C518F6C46A00FA4F36 /* Debug */,
+				E945A8C618F6C46A00FA4F36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E945A88718F6C46A00FA4F36 /* Project object */;
+}
