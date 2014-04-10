@@ -1,5 +1,5 @@
 //
-//  BENViewController.h
+//  BENDemoController.h
 //  BENPedometerChartDemo
 //
 //  Created by Ben Packard on 4/10/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BENPedometerChart.h"
 
-@interface BENViewController : UIViewController
+@interface BENDemoController : UIViewController <BENPedometerChartDataSource>
 
 @end
