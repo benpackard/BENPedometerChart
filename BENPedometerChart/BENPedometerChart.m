@@ -15,6 +15,8 @@
 
 #pragma mark - drawing the chart
 
+@synthesize dataSource = _dataSource;
+
 - (void)reloadChart
 {
 	if (!self.dataSource) return;
@@ -110,6 +112,57 @@
 															  constant:0]];
 		}
 	}
+	
+	//add the target line
+	if ([self.dataSource respondsToSelector:@selector(relativeHeightForTargetLine)] && [self.dataSource relativeHeightForTargetLine] <= maxBarHeight)
+	{
+		UIView *buffer = [[UIView alloc] init];
+		buffer.translatesAutoresizingMaskIntoConstraints = NO;
+		buffer.hidden = YES;
+		[self addSubview:buffer];
+		
+		[self addConstraint:[NSLayoutConstraint constraintWithItem:buffer
+														 attribute:NSLayoutAttributeBottom
+														 relatedBy:NSLayoutRelationEqual
+															toItem:tallestBarView.bar
+														 attribute:NSLayoutAttributeBottom
+														multiplier:1
+														  constant:0]];
+		
+		[self addConstraint:[NSLayoutConstraint constraintWithItem:buffer
+														 attribute:NSLayoutAttributeHeight
+														 relatedBy:NSLayoutRelationEqual
+															toItem:tallestBarView.bar
+														 attribute:NSLayoutAttributeHeight
+														multiplier:[self.dataSource relativeHeightForTargetLine] / maxBarHeight
+														  constant:0]];
+		
+		UIView *line = [[UIView alloc] init];
+		line.translatesAutoresizingMaskIntoConstraints = NO;
+		if ([self.dataSource respondsToSelector:@selector(colorForTargetLine)])
+		{
+			line.backgroundColor = [self.dataSource colorForTargetLine] ? [self.dataSource colorForTargetLine] : [UIColor lightGrayColor];
+		}
+		[self addSubview:line];
+		[self sendSubviewToBack:line];
+		[self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[line]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(line)]];
+		[self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[line(==0.5)][buffer]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(line, buffer)]];
+	}
 }
+
+#pragma mark - reload when the datasource is set
+
+- (id)dataSource
+{
+	return _dataSource;
+}
+
+- (void)setDataSource:(id<BENPedometerChartDataSource>)dataSource
+{
+	_dataSource = dataSource;
+	[self reloadChart];
+}
+
+#pragma mark
 
 @end

@@ -19,12 +19,15 @@
 - (NSString *)innerTitleForBarAtIndex:(NSUInteger)barIndex;
 - (NSString *)overTitleForBarAtIndex:(NSUInteger)barIndex;
 - (NSString *)underTitleForBarAtIndex:(NSUInteger)barIndex;
+- (CGFloat)relativeHeightForTargetLine;
+- (UIColor *)colorForTargetLine;
 
 @end
 
 @interface BENPedometerChart : UIView
 
 @property (weak) id <BENPedometerChartDataSource> dataSource;
+@property CGFloat barCompletionFactor;
 
 - (void)reloadChart;
 
