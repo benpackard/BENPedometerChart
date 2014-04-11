@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39AFA028AE1C47BF86331D67 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2903A50CBC4381B1012941 /* libPods.a */; };
 		E945A89318F6C46A00FA4F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89218F6C46A00FA4F36 /* Foundation.framework */; };
 		E945A89518F6C46A00FA4F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */; };
 		E945A89718F6C46A00FA4F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E945A89618F6C46A00FA4F36 /* UIKit.framework */; };
@@ -21,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E2903A50CBC4381B1012941 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B077B8FBEFC04A29A49D8DA7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E945A88F18F6C46A00FA4F36 /* BENPedometerChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BENPedometerChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E945A89218F6C46A00FA4F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,7 +48,6 @@
 				E945A89518F6C46A00FA4F36 /* CoreGraphics.framework in Frameworks */,
 				E945A89718F6C46A00FA4F36 /* UIKit.framework in Frameworks */,
 				E945A89318F6C46A00FA4F36 /* Foundation.framework in Frameworks */,
-				39AFA028AE1C47BF86331D67 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +61,6 @@
 				E945A89818F6C46A00FA4F36 /* BENPedometerChartDemo */,
 				E945A89118F6C46A00FA4F36 /* Frameworks */,
 				E945A89018F6C46A00FA4F36 /* Products */,
-				B077B8FBEFC04A29A49D8DA7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +79,6 @@
 				E945A89418F6C46A00FA4F36 /* CoreGraphics.framework */,
 				E945A89618F6C46A00FA4F36 /* UIKit.framework */,
 				E945A8B118F6C46A00FA4F36 /* XCTest.framework */,
-				9E2903A50CBC4381B1012941 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,11 +125,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E945A8C118F6C46A00FA4F36 /* Build configuration list for PBXNativeTarget "BENPedometerChartDemo" */;
 			buildPhases = (
-				D7CD65A99A8C49D3A4890FBD /* Check Pods Manifest.lock */,
 				E945A88B18F6C46A00FA4F36 /* Sources */,
 				E945A88C18F6C46A00FA4F36 /* Frameworks */,
 				E945A88D18F6C46A00FA4F36 /* Resources */,
-				DE4AE88FBFB54784B943696E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,39 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D7CD65A99A8C49D3A4890FBD /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DE4AE88FBFB54784B943696E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E945A88B18F6C46A00FA4F36 /* Sources */ = {
@@ -318,7 +277,6 @@
 		};
 		E945A8C218F6C46A00FA4F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B077B8FBEFC04A29A49D8DA7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -332,7 +290,6 @@
 		};
 		E945A8C318F6C46A00FA4F36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B077B8FBEFC04A29A49D8DA7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
